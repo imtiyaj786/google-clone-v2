@@ -11,7 +11,7 @@ export default function Home() {
   const searchInputRef = useRef(null);
   function search(event: any) {
     event.preventDefault();
-    const term = searchInputRef?.current?.value;
+    const term = searchInputRef.current.value;
     if (!term.trim()) return;
     router.push(`/search?term=${term.trim()}&searchType=`);
   }
