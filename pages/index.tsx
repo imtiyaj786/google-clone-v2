@@ -8,10 +8,10 @@ import { useRef } from "react";
 
 export default function Home() {
   const router = useRouter();
-  const searchInputRef = useRef(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   function search(event: any) {
     event.preventDefault();
-    const term = searchInputRef.current.value;
+    const term = searchInputRef.current?.value;
     if (!term.trim()) return;
     router.push(`/search?term=${term.trim()}&searchType=`);
   }
