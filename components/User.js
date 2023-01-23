@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
 export default function User({ className }) {
   const { data: session } = useSession();
   if (session) {
     return (
       <>
-        <img
+        <Image
           onClick={signOut}
           src={session.user.image}
           alt="user-image"
