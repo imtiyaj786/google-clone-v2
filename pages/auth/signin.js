@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Header from "../../components/Header";
 // import Image from "next/image";
 import { getProviders, signIn } from "next-auth/react";
@@ -10,7 +11,7 @@ export default function signin({ providers }) {
       <div className="mt-40">
         {Object.values(providers).map((provider) => (
           <div key={provider.name} className="flex flex-col items-center">
-            <img
+            <Image
               className="w-52 Object-cover"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
               alt="google-logo"

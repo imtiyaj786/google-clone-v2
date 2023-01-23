@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import PaginationButtons from "./PaginationButtons";
 
 export default function ImageResults({ results }) {
@@ -10,7 +11,7 @@ export default function ImageResults({ results }) {
           <div key={result.link} className="mb-8">
             <div className="group">
               <a href={result.image.contextLink}>
-                <img
+                <Image
                   className="group-hover:shadow-xl w-full h-60 object-contain"
                   src={result.link}
                   alt={result.title}
