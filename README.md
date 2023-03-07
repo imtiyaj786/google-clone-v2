@@ -44,6 +44,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ![clone seach page](https://user-images.githubusercontent.com/55544765/223416573-183ffc52-da49-412a-a7c4-b8c456675689.PNG)
 
+![clone next prev](https://user-images.githubusercontent.com/55544765/223417245-0479bb39-998b-4c44-aac0-e6aa40ffdee3.PNG)
+
 ![clone sign in page](https://user-images.githubusercontent.com/55544765/223416626-7788eaa8-a462-4383-8568-035ee003d095.PNG)
 
 
